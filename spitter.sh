@@ -21,7 +21,7 @@ ASSUMPTE="[CAIXABANK] Accés no autoritzat"
 REMITENT=CaixaBank\<soporte@caixabank.com\>
 CONTENT_TYPE=text/html
 DESTINATARI=antiphishingempresa@gmail.com
-COS=/home/xavi/Desktop/Mail/exemple_mail.html
+COS=/path_absolut/exemple_mail.html
 
 mail -s "$ASSUMPTE" --append=FROM:$REMITENT --append=Content-Type:$CONTENT_TYPE $DESTINATARI < $COS
 
