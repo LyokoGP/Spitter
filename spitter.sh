@@ -26,7 +26,7 @@ COS=/path_absolut/exemple_mail.html
 mail -s "$ASSUMPTE" --append=FROM:$REMITENT --append=Content-Type:$CONTENT_TYPE $DESTINATARI < $COS
 
 CUA=$(mailq)
-STRING="Mail queue is empty"
+STRING="La cua de correus esta buida"
 echo $CUA
 
 while [[ $CUA != $STRING ]]
